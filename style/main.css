@@ -1,0 +1,122 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(17, 17, 17);
+    font-family: 'Arial', Times, serif ;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    margin-left: 50px;
+    text-decoration: none;
+    margin-left: 5px;
+    color: red;
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+
+header nav a{
+    text-decoration: none;
+    color:#aaa;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex; /*joga os elementos por padrao em linha*/
+    flex-direction: column; /*define direção para coluna*/
+    justify-content: center; /*centraliza os eleentos para a direção escolhida*/
+    align-items: flex-start; /*flex-start que começem sempre da esquerda para direita*/
+
+}
+
+
+.filme-principal .descricao{
+    margin-bottom: 40px;/*distancia da margem dos botões da descrição*/
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+.titulo{
+    margin-left: 30px;
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50); 
+    border: none;
+    color: white;
+
+    margin-left: 30px;
+    margin-right: 0px;
+    padding: 15px 30px;/*espaço interno do elemento*/
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*WRAPPER = envelopar*/
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
